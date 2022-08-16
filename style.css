@@ -1,0 +1,69 @@
+body{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.square{
+    width: 100px;
+    height: 100px;
+    background-color: beige;
+    border: 1px solid gray;
+    display: inline-block;
+}
+
+
+.o{
+    position: relative;
+}
+
+.o:after{
+    content: "\2B55";
+    font-size: 60px;
+    position: absolute;
+    line-height: 100px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+}
+
+.x{
+    position: relative;
+}
+
+.x:after{
+    content: "\2716";
+    font-size: 80px;
+    position: absolute;
+    line-height: 100px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+}
+
+button{
+    padding: 10px;
+    width: 100px;
+    margin-top: 20px;
+    border-radius: 10px;
+    font-size: 20px;
+    border: 2px solid blue;
+    background-color: white;
+    color: black;
+    box-shadow: 3px 5px #888888;
+    transition-duration: 0.2s;
+}
+
+button:hover{
+    background-color: blue;
+    color: white;
+}
+
+button:active{
+    box-shadow: 0 1px #666666;
+    transform: translateY(4px);
+    transition-duration: 10ms;
+}
